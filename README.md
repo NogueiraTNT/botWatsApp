@@ -85,10 +85,11 @@ npm run dist
 - Estratégias de prevenção contra bloqueios (como delays e mensagens combinadas)
 - Empacotamento de aplicativos com electron-builder
 ```
+---
 ## 📬 Contato
 Caso tenha interesse em conhecer mais ou contribuir com melhorias, entre em contato:
-```md
+
 - Email: nogueirad345@gmail.com
 - LinkedIn: [Nogueira](https://linkedin.com/in/daniel-nogueira-64b556140)
 - GitHub: [@NogueiraTNT](https://github.com/NogueiraTNT)
-```
+---
