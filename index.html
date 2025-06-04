@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bot WhatsApp</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 30px; }
+    img { margin-top: 20px; width: 250px; }
+    button { padding: 10px 30px; font-size: 16px; margin-top: 30px; cursor: pointer; }
+  </style>
+</head>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.whats.onQRCode((qrImg) => {
+            const img = document.getElementById('qrcode');
+            if (img) {
+                img.src = qrImg;
+                img.style.display = 'block';
+            }
+        });
+
+        window.whats.onReady(() => {
+            document.getElementById('status').innerText = '✅ WhatsApp conectado!';
+            document.getElementById('qrcode').style.display = 'none';
+        });
+    });
+</script>
+<body>
+    <h1>📲 Bot WhatsApp</h1>
+    <div id="status">Aguardando conexão...</div>
+    <img id="qr" src="" hidden />
+  
+    <div style="margin-top: 20px;">
+      <label>📸 Escolha uma imagem (opcional):</label><br/>
+      <input type="file" id="imagem" accept="image/*">
+    </div>
+  
+    <div style="margin-top: 20px;">
+      <label>💬 Digite a mensagem:</label><br/>
+      <textarea id="mensagem" rows="4" cols="40" placeholder="Sua mensagem aqui..."></textarea>
+    </div>
+  
+    <button id="botao" disabled>Disparar Mensagem</button>
+  
+    <script src="renderer.js"></script>
+</body>
+</html>
+
+  
