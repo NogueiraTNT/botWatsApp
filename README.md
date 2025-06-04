@@ -63,7 +63,7 @@ Este sistema tem como objetivo facilitar o envio de mensagens em massa para cont
 
 ## 1. Clone o repositório:
 ```
-git clone https://github.com/NogueiraTNT/bot-whatsapp.git
+git clone https://github.com/NogueiraTNT/botWhatsApp.git
 cd bot-whatsapp
 ```
 ## 2. Instale as dependências:
